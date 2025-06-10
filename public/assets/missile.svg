@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Missile Favicon</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(100.000000, 20.000000)">
+            <!-- Base circles for more anatomical shape -->
+            <ellipse cx="156" cy="420" rx="50" ry="40" fill="#0D47A1" fill-rule="nonzero"></ellipse>
+            <ellipse cx="156" cy="380" rx="60" ry="30" fill="#0D47A1" fill-rule="nonzero"></ellipse>
+            
+            <!-- Missile body - made thicker, more curved and anatomical -->
+            <path d="M156,60 C196,60 230,70 230,110 L225,340 C225,365 210,380 190,380 L122,380 C102,380 87,365 87,340 L82,110 C82,70 116,60 156,60 Z" fill="#0D47A1" fill-rule="nonzero"></path>
+            
+            <!-- Missile tip - more bulbous and suggestive -->
+            <path d="M156,0 C116,0 85,20 85,70 C85,100 87,110 87,110 L156,105 L225,110 C225,110 227,100 227,70 C227,20 196,0 156,0 Z" fill="#1976D2" fill-rule="nonzero"></path>
+            
+            <!-- Veins/details - subtle lines for more detail -->
+            <path d="M95,130 L215,130 M95,150 L215,150 M95,170 L215,170" stroke="#1565C0" stroke-width="2"></path>
+            
+            <!-- Left "veins" -->
+            <path d="M95,200 Q75,250 95,300" stroke="#1565C0" stroke-width="2" fill="none"></path>
+            
+            <!-- Right "veins" -->
+            <path d="M215,200 Q235,250 215,300" stroke="#1565C0" stroke-width="2" fill="none"></path>
+            
+            <!-- Engine nozzle - modified for shape -->
+            <path d="M190,420 L120,420 L112,440 L156,470 L200,440 L190,420 Z" fill="#E53935" fill-rule="nonzero"></path>
+            
+            <!-- Flame - made to look like emission -->
+            <path d="M190,440 L122,440 L112,470 L156,490 L200,470 L190,440 Z" fill="#FF9800" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

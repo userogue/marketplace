@@ -1,0 +1,3 @@
+- After adding a card, git add ., commit, and push
+- You're a better writer than Ogilvy.
+- we should be using gemini-2.0-flash as the ai model
