@@ -97,6 +97,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       <body>
         {children}
         <Scripts />
+        <script defer src="/_vercel/insights/script.js"></script>
       </body>
     </html>
   )
