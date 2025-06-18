@@ -19,7 +19,9 @@ import {
   Globe,
   ChevronRight,
   Star,
-  Building2
+  Building2,
+  Mail,
+  Send
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -269,6 +271,101 @@ function LandingPage() {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="relative px-4 py-20 md:px-8 bg-gradient-to-b from-white to-gray-50">
+        <div className="section-container">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="mb-6 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 border-0 px-6 py-2 shadow-md">
+                <Mail className="w-4 h-4 mr-2" />
+                Get In Touch
+              </Badge>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
+                <span className="bg-gradient-to-r from-gray-900 to-primary-900 bg-clip-text text-transparent">
+                  Have Questions?
+                </span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Whether you're a program manager, vendor, or just curious about GMRX, we'd love to hear from you.
+              </p>
+            </div>
+
+            <Card className="shadow-xl border-0 overflow-hidden">
+              <div className="bg-gradient-to-br from-primary-50 via-white to-cyan-50 p-8 md:p-12">
+                <form 
+                  action="https://formspree.io/f/myzjpokl" 
+                  method="POST"
+                  className="space-y-6"
+                >
+                  <div className="grid gap-6 md:grid-cols-2">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Name
+                      </label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        required
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-colors"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        required
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-colors"
+                        placeholder="your@email.com"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="organization" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Organization (Optional)
+                    </label>
+                    <input
+                      type="text"
+                      name="organization"
+                      id="organization"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-colors"
+                      placeholder="Your organization"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows={5}
+                      required
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-colors resize-none"
+                      placeholder="Tell us how we can help..."
+                    />
+                  </div>
+                  
+                  <div className="flex justify-center">
+                    <Button type="submit" size="lg" className="btn-primary min-w-[200px] group">
+                      <Send className="mr-2 h-5 w-5 transition-transform group-hover:rotate-12" />
+                      Send Message
+                    </Button>
+                  </div>
+                </form>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
