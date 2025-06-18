@@ -24,6 +24,7 @@
     "@tailwindcss/vite": "^4.0.15",
     "@tanstack/react-router": "^1.114.25",
     "@tanstack/react-start": "^1.114.25",
+    "@vercel/analytics": "^1.5.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "dedent": "^1.6.0",
